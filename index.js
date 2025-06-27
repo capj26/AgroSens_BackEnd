@@ -17,7 +17,7 @@ app.get('/test-db', async (req, res) => {
     res.json({ dbTime: result.rows[0].now });
   } catch (err) {
     console.error(err);
-    res.status(500).send('Erro ao conectar ao banco');
+    res.status(500).send('Erro ao conectar ao banco2');
   }
 });
 
