@@ -12,7 +12,7 @@ app.get('/test-db', async (req, res) => {
     const result = await pool.query('SELECT NOW()');
     res.json({ dbTime: result.rows[0].now });
   } catch (err) {
-    console.error('Erro na conexão com o banco:', err);
+    console.error('Erro na conexão com o banco_:', err);
     res.status(500).send('Erro ao conectar ao banco');
   }
 });
